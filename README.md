@@ -1,7 +1,7 @@
 # git-example
 this is a git example
 
-<<SSH connection>>
+# SSH connection
 git@github.com:anlitsai/gasp.git
 
 …or create a new repository on the command line
@@ -23,7 +23,7 @@ git push -u origin master
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
 
-<<https connection>>
+# https connection
 https://github.com/anlitsai/gasp.git
 
 …or create a new repository on the command line
