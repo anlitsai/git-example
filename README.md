@@ -15,6 +15,10 @@ git push -u origin master
 
 ### or push an existing repository from the command line  
 
+git status
+git add .
+git commit -m "second commit"
+git status
 git remote add origin git@github.com:anlitsai/gasp.git  
 git push -u origin master  
 
