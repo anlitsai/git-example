@@ -15,12 +15,20 @@ git push -u origin master
 
 ### or push an existing repository from the command line  
 
+#gitpush.sh $name $comment
+#$name is the name of the repository, $comment is commit message
+name='gasp'
+datetime=`date +%Y%m%d-%H%M`
+comment='update_'$datetime
+
 git status  
 git add .  
-git commit -m "second commit"  
+echo "git commit -m $comment"
+git commit -m $comment
 git status  
 git remote add origin git@github.com:anlitsai/gasp.git  
 git push -u origin master  
+
 
 ### or import code from another repository  
 
@@ -32,11 +40,17 @@ https://github.com/anlitsai/gasp.git
 
 ### or create a new repository on the command line  
 
-echo "# gasp" >> README.md  
+name='gasp'
+#gitinit $name
+#$name is the name of the repository
+
+rm -rf .git/
 git init  
-git add README.md  
+git remote add origin git@github.com:anlitsai/$name.git
+git status
+git add .
 git commit -m "first commit"  
-git remote add origin https://github.com/anlitsai/gasp.git  
+git status
 git push -u origin master  
 
 ### or push an existing repository from the command line  
