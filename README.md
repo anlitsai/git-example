@@ -11,7 +11,7 @@ git init
 git add README.md  
 git commit -m "first commit"  
 git remote add origin git@github.com:anlitsai/gasp.git  
-git push -u origin master  
+git push -u origin master 
 
 ### or push an existing repository from the command line  
 
